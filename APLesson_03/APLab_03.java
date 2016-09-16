@@ -78,14 +78,7 @@ public class APLab_03
 		double sqrt2= Math.sqrt(2);
 		double volume= 2*(1+sqrt2)*edge*edge*vheight;
 		System.out.println("The volume is "+volume+" "+units+" cubed.");
-
-		
-		
-		
-		
-		
-		
-	}
+		}
 	
 }
 	
