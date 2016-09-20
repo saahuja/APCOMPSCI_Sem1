@@ -15,27 +15,29 @@ public class Lab_04
 		String Item1=sItem1.next();
 		System.out.println("Please enter the price");
 		double price1=sprice1.nextDouble();
-		form.format(Item1, price1);
+	
 		
 		System.out.println("Please enter item 2:");
 		String Item2=sItem2.next();
 		System.out.println("Please enter the price");
 		double price2=sprice2.nextDouble();
-		form.format(Item2, price2);
+
 		
 		System.out.println("Please enter item 3:");
 		String Item3=sItem3.next();
 		System.out.println("Please enter the price");
 		double price3=sprice3.nextDouble();
-		form.format(Item3, price3);
+		form.format(Item1, price1,Item2, price2, Item3, price3);
 	   }
 		
 		
-		public void format(String word, double number)
+		public void format(String I1, double IP1, String I2, double IP2, String I3, double IP3)
 		{
 			
 			System.out.println("<<<<<<<<<<<<<<<__Receipt__>>>>>>>>>>>>>>>>");
-		    System.out.printf("\n%10s .......... %10.2f", word, number );
+		    System.out.printf("\n%10s .......... %10.2f", I1, IP1 );
+			System.out.printf("\n%10s .......... %10.2f", I2, IP2 );
+			System.out.printf("\n%10s .......... %10.2f\n", I3, IP3 );
 		
 		
 	    }
