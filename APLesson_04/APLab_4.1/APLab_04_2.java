@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 public class APLab_04_2
 {
@@ -8,25 +7,25 @@ public class APLab_04_2
 		APLab_04_2 Calculation = new APLab_04_2();
 		
 		
-		Scanner sloan = new Scanner(System.in);
-		Scanner syear = new Scanner(System.in);
+		Scanner ssloan = new Scanner(System.in);
+		Scanner ssyear = new Scanner(System.in);
 		System.out.println("Enter the amount you want to loan:");
-		double Loan = SLoan.nextDouble();
+		float loan = ssloan.nextFloat();
 		System.out.println("For how many years?");
-		double Year = SYear.nextDouble();
-		double TotalCost = Calculation.Calc(Loan,0.03,12D,Year);
+		float year = ssyear.nextFloat();
+		float TotalCost = Calculation.Calc(loan,0.03f,12f,year);
 		System.out.println("Monthly Cost: "+TotalCost);
 		
 		
 	}
 	
-	public double Calc(double P,double r, double n,double t)
+	public float Calc(float P,float r, float n,float t)
 	{
-		double S1 = 1D+r/n;
-		double Power = n*t;
-		double S2 = Math.pow(S1,Power);
-		double S3 = P*S2/12D;
-		double Answer = S3;
+		float a1 = 1f+r/n;
+		float Power = n*t;
+		float a2 = Math.round(Math.pow(a1,Power));
+		float a3 = P*a2/12f;
+		float Answer = a3;
 		return Answer;
 	}
 }
