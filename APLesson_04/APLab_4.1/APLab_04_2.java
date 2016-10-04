@@ -8,14 +8,11 @@ public class APLab_04_2
 		APLab_04_2 Calculation = new APLab_04_2();
 		
 		
-		Scanner SLoan = new Scanner(System.in);
-		Scanner SYear = new Scanner(System.in);
-		
-		
-		System.out.println("Welcome to the Bank!");
-		System.out.println("Enter the amount of USD you want to loan:");
+		Scanner sloan = new Scanner(System.in);
+		Scanner syear = new Scanner(System.in);
+		System.out.println("Enter the amount you want to loan:");
 		double Loan = SLoan.nextDouble();
-		System.out.println("Years?");
+		System.out.println("For how many years?");
 		double Year = SYear.nextDouble();
 		double TotalCost = Calculation.Calc(Loan,0.03,12D,Year);
 		System.out.println("Monthly Cost: "+TotalCost);
