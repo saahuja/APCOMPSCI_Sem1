@@ -8,10 +8,8 @@ public class APLab_04G
 	{
 		
 		Scanner sside = new Scanner(System.in);
-		
 		System.out.println("Enter the side measurment of the cube:");
 		side = sside.nextFloat();
-		
 		avg(side);
 		Print();
 		
@@ -24,7 +22,7 @@ public class APLab_04G
 		return surfarea;
 	}
 	
-	public void Print()
+	public static void Print()
 	{
 		System.out.println("The Surface Area is: "+surfarea);
 	}

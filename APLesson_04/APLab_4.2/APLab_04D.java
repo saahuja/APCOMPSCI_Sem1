@@ -6,26 +6,22 @@ public class APLab_04D
 	
 	public static void main(String[]args)
 	{
-		Lab_04D Method = new Lab_04D();
+		APLab_04D method = new APLab_04D();
 		Scanner sradius = new Scanner(System.in);
-		
 		System.out.println("Enter the radius of the circle:");
 		radius = sradius.nextFloat();
-		
-		Method.Avg(radius);
-		Method.Print();
-		
+		method.Value(radius);
+		method.Print();
 	}
-	
-	public float Avg(float a)
+	public float Value(float a)
 	{
 		float sqrad = radius*radius;
-		area = sqrad*3.14f;
+		area = sqrad*3.141f;
 		return area;
 	}
 	
 	public void Print()
 	{
-		System.out.println("The area of a circle with a radius of "+radius+"is: "+area);
+		System.out.println("The area of a circle with a radius of "+radius+ " is "+area);
 	}
 }

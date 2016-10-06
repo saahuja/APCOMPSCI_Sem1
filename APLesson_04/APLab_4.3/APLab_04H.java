@@ -7,23 +7,21 @@ public class APLab_04H
 	public static void main(String[]args)
 	{
 		Scanner sradius = new Scanner(System.in);
-		
 		System.out.println("Enter the radius of the circle:");
 		radius = sradius.nextFloat();
-		Avg(radius);
+		Value(radius);
 		Print();
 		
 	}
-	
-	public static float Avg(float a)
+	public static float Value(float a)
 	{
 		float sqrad = radius*radius;
-		area = sqrad*3.14f;
+		area = sqrad*3.141f;
 		return area;
 	}
 	
-	public void Print()
+	public static void Print()
 	{
-		System.out.println("The area of a circle with a radius of "+radius+"is: "+area);
+		System.out.println("The area of a circle with a radius of "+radius+ " is "+area);
 	}
 }

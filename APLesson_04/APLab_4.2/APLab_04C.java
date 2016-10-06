@@ -2,30 +2,27 @@ import java.util.Scanner;
 public class APLab_04C
 {
 	static float side = 0;
-	static float surfarea = 0;
+	static float surfacearea = 0;
 	
 	public static void main(String[]args)
 	{
-		APLab_04C Method = new APLab_04C();
+		APLab_04C method = new APLab_04C();
 		Scanner sside = new Scanner(System.in);
-		
-		System.out.println("Enter the side measurment of the cube:");
+		System.out.println("Enter the side measurement of the cube:");
 		side = sside.nextFloat();
-		
-		Method.avg(side);
-		Method.Print();
-		
+		method.mside(side);
+		method.Print();
 	}
 	
-	public float avg(float a)
+	public float mside(float a)
 	{
 		float square = side*side;
-		surfarea = square*6;
-		return surfarea;
+		surfacearea = square*6;
+		return surfacearea;
 	}
 	
 	public void Print()
 	{
-		System.out.println("The Surface Area is: "+surfarea);
+		System.out.println("The surface area is: "+surfacearea);
 	}
 }

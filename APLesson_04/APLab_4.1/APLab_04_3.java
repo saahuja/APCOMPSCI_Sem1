@@ -1,34 +1,31 @@
 import java.util.Scanner;
-public class Lab_04_1B
+public class APLab_04_3
 {
 	public static void main(String[]args)
 	{
 		
-		Lab_04_1B CVolume = new Lab_04_1B();
-		
+		APLab_04_3 calcvolume= new APLab_04_3();
+		Scanner slength = new Scanner(System.in);
+		Scanner swidth = new Scanner(System.in);
+		Scanner sheight = new Scanner(System.in);
 	
-		Scanner SLength = new Scanner(System.in);
-		Scanner SWidth = new Scanner(System.in);
-		Scanner SHeight = new Scanner(System.in);
-	
-		System.out.println("Length?");
-		double Length = SLength.nextDouble();
+		System.out.println("Enter the length of the subwoofer box:");
+		double length = slength.nextDouble();
 		
-		System.out.println("Width?");
-		double Width = SWidth.nextDouble();
+		System.out.println("Enter the width of the subwoofer box");
+		double width = swidth.nextDouble();
 		
-		System.out.println("Height?");
-		double Height = SHeight.nextDouble();
+		System.out.println("Enter the height of the subwoofer box");
+		double height = sheight.nextDouble();
 		
-		double Answer = CVolume.Volume(Length,Width,Height);
-		
-		System.out.println("Volume in Cubic Feet: "+Answer);
+		double product = conversion.calcvolume(length,height, width);
+		System.out.println("Your volume in cubic feet: "+product);
 	}
 	
-	public double Volume(double L, double W, double H)
+	public double calcvolume(double l, double h, double w);
 	{
-		double InchCube = L*W*H;
-		double Convert = InchCube*0.000578704;
-		return Convert;
+		double volumeinches = l*h*w;
+		double conversion= volumeinches*0.000578704;
+		return conversion;
 	}
 }
