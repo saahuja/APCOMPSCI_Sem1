@@ -9,10 +9,11 @@ public class APLab_04H
 		Scanner sradius = new Scanner(System.in);
 		System.out.println("Enter the radius of the circle:");
 		radius = sradius.nextFloat();
-		Value(radius);
-		Print();
+		
+		Print(Value(radius));
 		
 	}
+	
 	public static float Value(float a)
 	{
 		float sqrad = radius*radius;
@@ -20,8 +21,15 @@ public class APLab_04H
 		return area;
 	}
 	
-	public static void Print()
+	public static void Print(float a)
 	{
-		System.out.println("The area of a circle with a radius of "+radius+ " is "+area);
+		System.out.println("The area of a circle with a radius of "+radius+ " is "+a);
 	}
 }
+
+
+
+
+
+
+

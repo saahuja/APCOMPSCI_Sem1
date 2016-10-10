@@ -10,8 +10,7 @@ public class APLab_04C
 		Scanner sside = new Scanner(System.in);
 		System.out.println("Enter the side measurement of the cube:");
 		side = sside.nextFloat();
-		method.mside(side);
-		method.Print();
+		method.Print(method.mside(side));
 	}
 	
 	public float mside(float a)
@@ -21,8 +20,8 @@ public class APLab_04C
 		return surfacearea;
 	}
 	
-	public void Print()
+	public void Print(float A)
 	{
-		System.out.println("The surface area is: "+surfacearea);
+		System.out.println("The surface area is: "+A);
 	}
 }

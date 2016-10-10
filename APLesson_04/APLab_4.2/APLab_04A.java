@@ -7,20 +7,18 @@ public class APLab_04A
 	public static void main(String[]args)
 	{
 		APLab_04A Method = new APLab_04A();	
-		Scanner slength = new Scanner(System.in);
-		Scanner swidth = new Scanner(System.in);
-		System.out.println("Enter the lengh of the Rectangle:");
-		length = slength.nextFloat();
-		System.out.println("Enter the width of the Rectangle:");
-		width = swidth.nextFloat();
+		Scanner sI = new Scanner(System.in);
+
+		System.out.println("What is the lengh of the Rectangle:");
+		length = sI.nextFloat();
+		System.out.println("What is the width of the Rectangle:");
+		width = sI.nextFloat();
 		Method.perimeter(length,width);
 		Method.Print();
-		
 	}
-	public float perimeter(float length, float width)
+	public void perimeter(float length, float width)
 	{
 		Perimeter = 2*length+2*width;
-		return Perimeter;
 	}
 	
 	public void Print()

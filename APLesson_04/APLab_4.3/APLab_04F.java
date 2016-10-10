@@ -6,7 +6,6 @@ public class APLab_04F
 	static float num3 = 0;
 	static float average = 0;
 
-	
 	public static void main(String[]args)
 	{
 		Scanner snum1 = new Scanner(System.in);
@@ -18,8 +17,8 @@ public class APLab_04F
 		num2 = snum2.nextFloat();
 		System.out.println("Enter Number 3:");
 		num3 = snum3.nextFloat();
-		value(num1, num2, num3);
-		Print();
+		
+		Print(value(num1, num2, num3));
 		
 	}
 	
@@ -30,8 +29,8 @@ public class APLab_04F
 		return average;
 	}
 	
-	public static void Print()
+	public static void Print(float A)
 	{
-		System.out.println("The average of the three numbers is: "+ average);
+		System.out.println("The average of the three numbers is: "+ A);
 	}
 }

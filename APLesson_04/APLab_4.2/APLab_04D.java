@@ -10,8 +10,7 @@ public class APLab_04D
 		Scanner sradius = new Scanner(System.in);
 		System.out.println("Enter the radius of the circle:");
 		radius = sradius.nextFloat();
-		method.Value(radius);
-		method.Print();
+		method.Print(method.Value(radius));
 	}
 	public float Value(float a)
 	{
@@ -20,8 +19,8 @@ public class APLab_04D
 		return area;
 	}
 	
-	public void Print()
+	public void Print(float A)
 	{
-		System.out.println("The area of a circle with a radius of "+radius+ " is "+area);
+		System.out.println("The area of a circle with a radius of "+radius+ " is "+A);
 	}
 }
