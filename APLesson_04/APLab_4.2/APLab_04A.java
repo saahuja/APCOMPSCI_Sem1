@@ -9,7 +9,7 @@ public class APLab_04A
 		APLab_04A Method = new APLab_04A();	
 		Scanner sI = new Scanner(System.in);
 
-		System.out.println("What is the lengh of the Rectangle:");
+		System.out.println("What is the length of the Rectangle:");
 		length = sI.nextFloat();
 		System.out.println("What is the width of the Rectangle:");
 		width = sI.nextFloat();

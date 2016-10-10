@@ -8,7 +8,7 @@ public class APLab_04E
 	{
 		Scanner kb = new Scanner(System.in);
 
-		System.out.println("Enter the lengh of the Rectangle:");
+		System.out.println("Enter the length of the Rectangle:");
 		length = kb.nextFloat();
 		System.out.println("Enter the width of the Rectangle:");
 		width = kb.nextFloat();
@@ -20,5 +20,11 @@ public class APLab_04E
 	{
 		Perimeter = 2*length+2*width;
 		return Perimeter;
+		
 	}
-	
+	public static void Print(float A)
+	{
+		System.out.println("The rectangle's perimeter is: "+A);
+
+	}
+}
