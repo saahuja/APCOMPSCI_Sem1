@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class APLab_05_1
+public class APExercise_05_1
 {
 	public static void main(String[]args)
 	{
@@ -32,7 +32,7 @@ public class APLab_05_1
 	double subtotal= price1+price2+price3+price4;
 	double discount= calcdisc(subtotal);
 	double tax= subtotal*0.08;
-	double total=discount+tax;
+	double total=subtotal+tax-discount;
 	
 			System.out.println("<<<<<<< receipt >>>>>>>");
 	System.out.println();
@@ -44,7 +44,7 @@ public class APLab_05_1
 	format("Subtoal: ", subtotal);
 	format("Total: ", total);
 	
-	System.out.println("--------------------------------------");
+	System.out.println("\n--------------------------------------");
 	System.out.println("Thank you! Come again!");
 	
 	}

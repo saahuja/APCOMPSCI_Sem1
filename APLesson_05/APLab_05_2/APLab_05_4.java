@@ -1,8 +1,8 @@
 import java.util.Scanner;
-public class Lab_05_4
+public class APLab_05_4
 {
-	static String usernames = "";
-	static String passwords = "";
+	static String user = "";
+	static String pass = "";
 	public static void main(String[]args)
 	{
 		System.out.println("Password Program");
@@ -13,30 +13,30 @@ public class Lab_05_4
 	{
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Enter your username:");
-		usernames = kb.next();
+		user = kb.next();
 		System.out.println("Enter your password:");
-		passwords = kb.next();
-		security(use,pas);
+		pass = kb.next();
+		security(user,pass);
 	
 
 	}
 	public static void security(String use, String pas)
 	{
-		if(use.Equals("sahil")&&pas.Equals("sahil"))
+		if(use.equals("sahil")&&pas.equals("sahil"))
 		{
 			System.out.println("Access Granted");
 		}
-		else if(use.Equals("sahil")&&!pas.Equals("sahil"))
+		else if(use.equals("sahil")&&!pas.equals("sahil"))
 		{
 			System.out.println("Your password is incorrect");
 			passcheck();
 		}
-		else if(!use.Equals("sahil")&&pas.Equals("sahil"))
+		else if(!use.equals("sahil")&&pas.equals("sahil"))
 		{	
 			System.out.println("Your username is incorrect");	
 			passcheck();
 		}
-		else if(!use.Equals("sahil")&&!pas.Equals("sahil"))
+		else if(!use.equals("sahil")&&!pas.equals("sahil"))
 		{
 			System.out.println("Your username and password is incorrect");
 			passcheck();

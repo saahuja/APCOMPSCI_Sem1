@@ -10,7 +10,7 @@ public class APLab_05_2
 		System.out.println("Enter your weight in pounds");
 		float weight = sweight.nextFloat();
 		float BMI = 703*weight/height/height;
-		System.out.println("Your BMi is "+BMI);
+		System.out.println("Your BMI is "+BMI);
 		System.out.println("Your condition is "+Calc(BMI));
 	}
 		
@@ -28,5 +28,7 @@ public class APLab_05_2
 			return "Obese";
 		else if(bmi>39.9f)
 			return "Morbidly Obese";
+		else
+			return "Error";
 	}
 }
