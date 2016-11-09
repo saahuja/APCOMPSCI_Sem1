@@ -22,9 +22,9 @@ public class APLab_04_2
 	{
 		float Power = n*t;
 		float answer1 = 1f+r/n;
-		float answer2 = Math.round(Math.pow(a1,Power));
-		float answer3 = P*a2/12f;
-		float Answer = a3;
+		float answer2 = Math.round(Math.pow(answer1,Power));
+		float answer3 = P*answer2/12f;
+		float Answer = answer3;
 		return Answer;
 	}
 }
