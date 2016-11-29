@@ -9,9 +9,9 @@ public class APLab_7_1
 		int total=integer;
 		int read=0;
 		int sum=0;
-		Tot(integer, total, read, sum);	
+		sum(read, integer, total, sum);	
 	}
-	public static void Tot(int read, int integer, int total,int sum);
+	public static void sum(int read, int integer, int total,int sum);
 	{
 		while(integer>0)
 		{
@@ -19,6 +19,6 @@ public class APLab_7_1
 			sum= sum+read;
 			integer=(integer-read)/10;
 		}
-		System.out.println("The sum of the digits in "+total+" is "+Tot);
+		System.out.println("The sum of the digits in "+total+" is "+sum);
 	}
 }

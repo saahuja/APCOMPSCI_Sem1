@@ -8,6 +8,12 @@ public class APLab_7_4
 		String sentence= kb.nextLine();
 		replace(sentence);
 	}
+	public static String both(String a, String A)
+	{
+		a+=A;
+		return a;
+	}
+	
 	public static void replace(String sentence)
 	{
 		int replacement=0;
@@ -16,12 +22,13 @@ public class APLab_7_4
 		while(search<sentence.length())
 		{
 			A=sentence.substring(replacement,replacement+1);
-			if(A.equals("a")
+			if(A.equals("a"))
 			{
-				A="@"
+				A="@";
 			}
-			a=
+			a=both(a,A);
+			search++;
 		}
+		System.out.println("The new sentence is: "+a);
 	}
-	System.out.println("The new sentence is: "+a);
 }
