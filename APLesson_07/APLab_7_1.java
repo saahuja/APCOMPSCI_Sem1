@@ -5,13 +5,13 @@ public class APLab_7_1
 	{
 		Scanner kb=new Scanner(System.in);
 		System.out.println("Enter an integer:");
-		int integer=kb.nextInt();
-		int total=integer;
-		int read=0;
+		int number= kb.nextInt();
 		int sum=0;
-		sum(read, integer, total, sum);	
+		int num=number;
+		int read=0;
+		sumDigits(read, integer, total, sum);	
 	}
-	public static void sum(int read, int integer, int total,int sum);
+	public static void sumDigits(int read, int integer, int total,int sum);
 	{
 		while(integer>0)
 		{
@@ -19,6 +19,6 @@ public class APLab_7_1
 			sum= sum+read;
 			integer=(integer-read)/10;
 		}
-		System.out.println("The sum of the digits in "+total+" is "+sum);
+		System.out.println("The sum of the digits in "+numberl+" is "+sum);
 	}
 }
