@@ -1,4 +1,4 @@
-impotr java.util.Scanner;
+import java.util.Scanner;
 public class APLab_9_2
 {
 	public static void main(String[]args)
