@@ -3,20 +3,19 @@ public class APLab_9_2
 {
 	public static void main(String[]args)
 	{
-		Scanner kb=new kb(System.in);
-		System.out.println("Please Enter 5 words:");
-		String[] wors=new String[5];
-		for (int i=0;a<words.length;i++)
+		Scanner kb=new Scanner(System.in);
+		System.out.println("Enter 5 words:");
+		String[]words=new String[5];
+		for (int i=0;i<words.length;i++)
 		words[i]=kb.next();
-		first(word)
+		first(words);
 	}
-	public static void first(String[]firstletter)
+	public static void first(String[]FirstLetter)
 	{
-		for(String word:first lett)
-		
-
-
-			}
-
-
+		for(String word:FirstLetter)
+		{
+			String one=word.substring(0,1);
+			System.out.println(one);
+		}
+	}
 }
