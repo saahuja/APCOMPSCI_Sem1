@@ -1,27 +1,28 @@
 import java.util.Scanner;
+import java.util.Random;
 public class APLab_9_5
 {
-	static int[] array;
+	static int[]Array;
 	public static void main(String[]args)
 	{	
-		array=new int [10];
-		fillArray(array.length);
+		Array=new int [10];
+		fillArray(Array.length);
 		printArray(getOdds());
 	}
 	private static void printArray(String Odds)
 	{
-		System.out.println("Original Array");
-		for(int i:array)
+		System.out.println("For the folloowing numbers...");
+		for(int i:Array)
 		{
-			System.out.println(i+"");
+			System.out.println(i+" ");
 		}
-		System.out.println("Odds");
+		System.out.println("These are the odds:");
 		System.out.println(Odds);
 	}
 	private static String getOdds()
 	{
 		String Odds ="";
-		for(int i:array)
+		for(int i:Array)
 			{
 				if(i%2==1)
 				{
@@ -35,7 +36,7 @@ public class APLab_9_5
 		Random num= new Random();
 		for (int i=0;i<j;i++)
 		{
-			array[i]=num.nextInt(100)+1;
+			Array[i]=num.nextInt(100)+1;
 		}
 	}
 }
