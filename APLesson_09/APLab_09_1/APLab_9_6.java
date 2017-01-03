@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 public class APLab_9_6 
 {
 	static int[] array;
