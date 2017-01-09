@@ -19,7 +19,7 @@ public class APLab_7_4
 		int replacement=0;
 		String A="";
 		String a="";
-		while(search<sentence.length())
+		while(replacement<sentence.length())
 		{
 			A=sentence.substring(replacement,replacement+1);
 			if(A.equals("a"))
@@ -27,7 +27,7 @@ public class APLab_7_4
 				A="@";
 			}
 			a=both(a,A);
-			search++;
+			replacement++;
 		}
 		System.out.println("The new sentence is: "+a);
 	}
