@@ -1,16 +1,19 @@
 import java.util.Random;
-public class APLab_User 
+public class APLab_User
 {
 	static String fn, ln, av;
 	static long id;
-	static Random rand = new Random();
+	static Random r = new Random();
 
-	public APLab_User() 
+	public APLab_User()
 	{
-		ID = rand.nextInt(10000000) + 1;
+		fn = "none";
+		ln = "none";
+		av = "none";
+		id = r.nextInt(10000000) + 1;
 	}
 
-	public APLab_Stuff(String fni, String lni) 
+	public APLab_User(String fni, String lni)
 	{
 		fn = fni;
 		ln = lni;
@@ -18,7 +21,7 @@ public class APLab_User
 		id = r.nextInt(10000000) + 1;
 	}
 
-	public APLab_Stuff(String fni, String lni, String avi) 
+	public APLab_User(String fni, String lni, String avi) 
 	{
 		fn = fni;
 		ln = lni;
@@ -26,22 +29,22 @@ public class APLab_User
 		id = r.nextInt(10000000) + 1;
 	}
 
-	public String getFN()
+	public String getFN() 
 	{
 		return fn;
 	}
 
-	public String getLN() 
+	public String getLN()
 	{
 		return ln;
 	}
 
-	public String getAV()
+	public String getAV() 
 	{
 		return av;
 	}
 
-	public long getID() 
+	public long getID()
 	{
 		return id;
 	}
