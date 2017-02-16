@@ -1,49 +1,59 @@
-import java.util.Scanner
-public class APLab_toy
-{
+public abstract class toy
+ {
 	private String name;
 	private int count;
 
-	public APLab_toy()
+	public toy() 
 	{
-		this.name=" ";
-		this.count=0                                                                                                                                       ;
+		this.name = "";
+		this.count = 1;
 	}
-	
-	public APLab_toy(String n, double c)
+	public toy(String name)
 	{
-		this.name= n;
-		this.count= c;
+		this.name = name;
+		this.count = 1;
 	}
-	
-	public String toString()
+	public abstract String getType();
+	public String toString() 
 	{
-		
-		
-		
+		return "Toy Name: " + name + "\n" + "Toy Count: " + count + "\n" + "Toy Type: " + getType();
 	}
-	
-	public default to String()
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public String getName()
+	{
+		return this.name;
+	}
+	public int getCount() 
+	{
+		return this.count;
+	}
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+	public void setCount(int count)
+	{
+		this.count = count;
+	}
+
 }
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
