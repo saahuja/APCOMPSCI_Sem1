@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.util.Random;                                       
 	public class GameSystem
 	{
-		private String platform;
 		private int serialNo;
+		private String platform;
 		public GameSystem(String p)
 		{
 			this.platform=p;
