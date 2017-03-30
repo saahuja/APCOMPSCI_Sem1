@@ -8,5 +8,4 @@ public class StudentAdvance extends Advance
 	{
 		super(D);
 	}
-	
 }
