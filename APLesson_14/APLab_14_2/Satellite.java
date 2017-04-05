@@ -32,7 +32,8 @@ public class Satellite
 		}
 		System.out.println(printout);
 	}
-	public static double getDistance(double[] car, double[] home) {
+	public static double getDistance(double[] car, double[] home)
+	{
 		return Math.sqrt((Math.pow(car[0] - home[0], 2) + Math.pow(car[1] - home[1], 2)));
 	}
 	public static String getLocation(double[] loc)

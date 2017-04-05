@@ -6,9 +6,9 @@ public class TicketDriver
 		Ticket advance = new Advance(10);
 		Ticket stuadvance = new StudentAdvance(10);
 		
-		System.out.println(walk.toString());
-		System.out.println(advance.toString());
-		System.out.println(stuadvance.toString());
+		System.out.println(walk);
+		System.out.println(advance);
+		System.out.println(stuadvance);
 	}
 }
 	

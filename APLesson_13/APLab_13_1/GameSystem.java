@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 import java.util.Random;                                       
-	public class GameSystem
+	public abstract class GameSystem
 	{
 		private int serialNo;
 		private String platform;

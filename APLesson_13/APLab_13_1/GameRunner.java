@@ -7,9 +7,9 @@ public class GameRunner
 		GameSystem playstation = new Playstation();
 		
 
-		System.out.println(xbox.toString());
-		System.out.println(playstation.toString());
-		System.out.println(pc.toString());
+		System.out.println(xbox);
+		System.out.println(playstation);
+		System.out.println(pc);
 	}
  }
  
