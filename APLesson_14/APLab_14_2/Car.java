@@ -13,7 +13,7 @@ public class Car implements Location
 	{
 		return ID;
 	}
-	public void move(int x, int y)
+	public void move(double x, double y)
 	{
 		location = new double[]{ x, y };
 	}
