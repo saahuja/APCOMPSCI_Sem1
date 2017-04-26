@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class MagpieP1Runner
+public class APLab_MagpieP1Runner
 {
 	public static void main(String[]args)
 	{

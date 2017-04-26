@@ -1,34 +1,43 @@
-public class Magpie2 {
-	public String getGreeting() {
+public class Magpie2 
+{
+	public String getGreeting() 
+	{
 		return "Hello, let's talk.";
 	}
 
-	public String getResponse(String statement) {
+	public String getResponse(String statement) 
+	{
 		String response = "";
 
-		if (statement.length() == 0) {
+		if (statement.length() == 0) 
+		{
 			response = "Say something, please.";
 		}
 
-		else if (findKeyword(statement, "no")) {
+		else if (findKeyword(statement, "no")) 
+		{
 			response = "Why so negative?";
 		}
 
 		else if (findKeyword(statement, "mother") || findKeyword(statement, "father")
-				|| findKeyword(statement, "brother") || findKeyword(statement, "sister")) {
+				|| findKeyword(statement, "brother") || findKeyword(statement, "sister")) 
+		{
 			response = "Tell me more about your family.";
 		}
 
 		else if (findKeyword(statement, "cat") || findKeyword(statement, "dog") || findKeyword(statement, "fish")
-				|| findKeyword(statement, "turtle")) {
+				|| findKeyword(statement, "turtle")) 
+		{
 			response = "Tell me more about your pet.";
 		}
 
-		else if (findKeyword(statement, "Robinette")) {
+		else if (findKeyword(statement, "Robinette")) 
+		{
 			response = "He sounds like a pretty dank teacher.";
 		}
 
-		else {
+		else 
+		{
 			response = getRandomResponse();
 		}
 		return response;
