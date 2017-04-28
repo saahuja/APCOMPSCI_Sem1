@@ -15,7 +15,7 @@ import javax.swing.border.*;
  * Also modified to show row and columns by Barbara Ericson
  * 
  * @author Keith McDermottt, gte047w@cc.gatech.edu
- * @author Barb Ericson ericson@cc.gatech.edu
+ * @author Barb Ericson ericson@cc.gatech.edu 
  */
 public class PictureExplorer implements MouseMotionListener, ActionListener, MouseListener
 {
