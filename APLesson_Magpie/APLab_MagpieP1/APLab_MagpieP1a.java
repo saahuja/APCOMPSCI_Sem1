@@ -1,4 +1,4 @@
-public class Magpie2 
+public class APLab_MagpieP1a
 {
 	public String getGreeting() 
 	{

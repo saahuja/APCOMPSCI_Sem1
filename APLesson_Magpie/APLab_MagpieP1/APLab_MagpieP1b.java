@@ -1,5 +1,5 @@
 package Complete;
-public class Magpie3
+public class APLab_MagpieP1b
 {
 	public String getGreeting()
 	{
