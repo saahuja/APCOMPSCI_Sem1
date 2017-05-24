@@ -21,6 +21,8 @@ public class Satellite
 		printout += "\n\n" + "==========================" + "\nMoved locations...";
 		for(Location l:locate) 
 		{
+			x=rand.nextInt(100);
+			y=rand.nextInt(100);
 			printout += "\nAfter "+((Car)l).getID()+" moved from:(" + getLocation(((Car)l).getLoc()) + ")";
 			((Car)l).move(x,y);
 			printout += "\nNew Location for "+((Car)l).getID() + " is: (" + getLocation(((Car)l).getLoc()) + ")";
