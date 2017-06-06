@@ -127,7 +127,6 @@ public class APLab_MagpieP2
 			response = "Do you really think so?";
 		else if (whichResponse == 3)
 			response = "You don't say.";
-
 		return response;
 	}
 }
