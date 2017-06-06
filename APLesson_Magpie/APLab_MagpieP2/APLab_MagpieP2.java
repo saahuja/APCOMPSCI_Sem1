@@ -51,9 +51,9 @@ public class APLab_MagpieP2
 		{
 		statement = statement.trim().toLowerCase();
 		
-		output = output.replaceFirst("I want to ", "What would it mean to ");
-		output += "?";
-		return output;
+		statement = statement.replaceFirst("I want to ", "What would it mean to ");
+		statement += "?";
+		return statement;
 		}
 		private String transformYouMeStatement(String statement)
 		{

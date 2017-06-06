@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class MagpieRunner2
+public class APLab_MagpieRunnerP3
 {
 	public static void main(String[] args)
 	{
-		Magpie2 maggie = new Magpie2();
+		APLab_MagpieP3 maggie = new APLab_MagpieP3();
 		
 		System.out.println (maggie.getGreeting());
 		Scanner in = new Scanner (System.in);
