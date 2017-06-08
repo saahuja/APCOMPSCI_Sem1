@@ -3,7 +3,7 @@ public class APLab_MagpieP1Runner
 {
 	public static void main(String[]args)
 	{
-		APLab_MagpieP1a mg = new APLab_MagpieP1a();
+		APLab_MagpieP1 mg = new APLab_MagpieP1();
 		
 		System.out.println (mg.getGreeting());
 		Scanner in = new Scanner (System.in);
