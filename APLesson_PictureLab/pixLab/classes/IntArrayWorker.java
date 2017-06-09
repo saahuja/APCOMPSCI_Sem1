@@ -98,19 +98,21 @@ public class IntArrayWorker
       }
     }
   }
-   public int getCount(int num){
-	int count = 0;
+   public int getCount(int num)
+   {
+	int c = 0;
 	for(int x = 0;x<matrix.length;x++){
 		for(int y=0;y<matrix[0].length;y++){
 			if(matrix[x][y] == num){
-				count++;
+				c++;
 			}
 		}
 	}
-	return count;
+	return c;
   }  
   
-  public int getLargest(){
+  public int getLargest()
+  {
 	int largest = Integer.MIN_VALUE;
 	for(int x = 0;x<matrix.length;x++){
 		for(int y=0;y<matrix[0].length;y++){
@@ -122,7 +124,8 @@ public class IntArrayWorker
 	return largest;
   }
   
-    public int getColTotal(int col){
+    public int getColTotal(int col)
+	{
 		int total = 0;
 		for(int y = 0;y<matrix.length;y++){
 			total += matrix[y][col];
